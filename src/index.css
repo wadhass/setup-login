@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-display: "Roboto", "Helvetica Neue", sans-serif;
+  --color-primary: #151b23;
+  --color-secondary: #202830;
+  --color-tertiary: #4d5662;
+  --color-error: #dc2626;
+  --color-background: #151b23; 
+  --color-text: #e2e8f0;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-display);
+    background-color: var(--color-background);
+    color: var(--color-text);
+  }
+}
+
