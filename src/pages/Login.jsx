@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate, Navigate, Link } from 'react-router-dom';
 import { ArrowRight, Loader2 } from 'lucide-react';
 import toast from 'react-hot-toast';
-// import ErrorAlert from '../components/ErrorAlert';
+import ErrorAlert from '../components/ErrorAlert';
 
 const Login = () => {
   const [email, setEmail] = useState('');
