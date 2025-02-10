@@ -161,7 +161,7 @@ const Notes = () => {
             >
               <button
                 onClick={() => navigate(`/note/${note._id}/edit`)}
-                className='p-2 text-tertiary hover:bg-primary rounded-lg transition-colors'
+                className='p-2 text-green-500 hover:bg-green-600 rounded-lg transition-colors'
                 title='Edit note'
               >
                 <Edit size={18} className='stroke-[2.5]' />
@@ -169,7 +169,7 @@ const Notes = () => {
               <button
                 onClick={() => handleDeleteNote(note._id)}
                 disabled={noteIdToDelete === note._id || isDeleting}
-                className='p-2 text-error hover:bg-error/10 rounded-lg transition-colors disabled:opacity-50'
+                className='p-2 text-red-500 hover:bg-red-600 rounded-lg transition-colors disabled:opacity-50'
                 title='Delete note'
               >
                 {noteIdToDelete === note._id && isDeleting ? (
@@ -211,7 +211,7 @@ const Notes = () => {
           />
           <button
             type='submit'
-            className='w-full bg-primary py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-all hover:shadow-lg disabled:opacity-70 disabled:cursor-not-allowed'
+            className='w-full bg-gray-950 py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-all hover:shadow-lg disabled:opacity-70 disabled:cursor-not-allowed'
             disabled={isSubmitting}
           >
             {isSubmitting ? <Loader2 className='animate-spin' size={20} /> : <Plus size={20} className='stroke-[3]' />}

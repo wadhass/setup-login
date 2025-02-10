@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Loader2, Save, ArrowLeft } from 'lucide-react';
 import toast from 'react-hot-toast';
@@ -124,7 +124,7 @@ const EditNote = () => {
           <button
             type='submit'
             disabled={isSubmitting}
-            className='w-full bg-primary py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-all hover:shadow-lg disabled:opacity-70 disabled:cursor-not-allowed'
+            className='w-full bg-gray-950 py-3 px-6 rounded-xl flex items-center justify-center gap-2 transition-all hover:shadow-lg disabled:opacity-70 disabled:cursor-not-allowed'
           >
             {isSubmitting ? <Loader2 className='animate-spin' size={20} /> : <Save size={20} className='stroke-[3]' />}
             <span>{isSubmitting ? 'Saving Changes...' : 'Save Changes'}</span>
